@@ -149,7 +149,7 @@ var CreatePatientComponent = /** @class */ (function () {
             lastName: '',
             isHidden: false
         };
-        this.url = 'http://localhost:44300/api/patients';
+        this.url = 'https://patientsapi.azurewebsites.net/api/patients';
     }
     CreatePatientComponent.prototype.ngOnInit = function () {
     };
@@ -224,7 +224,7 @@ var CreatePatientLabComponent = /** @class */ (function () {
         this.labTypes = [];
         this.labs = [];
         this.labsInitialized = false;
-        this.url = 'http://localhost:44400/api/labscollection';
+        this.url = 'https://labsapi.azurewebsites.net/api/labscollection';
     }
     CreatePatientLabComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -329,7 +329,7 @@ var PatientProfileComponent = /** @class */ (function () {
         this.getPatientLabsService = getPatientLabsService;
         this.http = http;
         this.isVisible = true;
-        this.url = 'http://localhost:44400/api/labscollection';
+        this.url = 'https://labsapi.azurewebsites.net/api/labscollection';
     }
     PatientProfileComponent.prototype.ngOnInit = function () {
         var _this = this;
