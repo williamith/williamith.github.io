@@ -23,8 +23,8 @@ function webpackAsyncContext(req) {
 		});
 	}
 	return __webpack_require__.e(ids[1]).then(function() {
-		var module = __webpack_require__(ids[0]);
-		return module;
+		var id = ids[0];
+		return __webpack_require__(id);
 	});
 }
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
@@ -45,20 +45,18 @@ module.exports = webpackAsyncContext;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
-/* harmony import */ var _pages_home_login_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/home/login/login.component */ "./src/app/pages/home/login/login.component.ts");
-/* harmony import */ var _pages_labs_labs_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/labs/labs.component */ "./src/app/pages/labs/labs.component.ts");
-/* harmony import */ var _pages_pharmacists_pharmacists_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/pharmacists/pharmacists.component */ "./src/app/pages/pharmacists/pharmacists.component.ts");
-/* harmony import */ var _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/not-found/not-found.component */ "./src/app/pages/not-found/not-found.component.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _pages_labs_labs_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/labs/labs.component */ "./src/app/pages/labs/labs.component.ts");
+/* harmony import */ var _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/not-found/not-found.component */ "./src/app/pages/not-found/not-found.component.ts");
+/* harmony import */ var _pages_pharmacist_overview_pharmacist_overview_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/pharmacist-overview/pharmacist-overview.component */ "./src/app/pages/pharmacist-overview/pharmacist-overview.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/checkbox */ "./node_modules/@angular/material/esm5/checkbox.es5.js");
+/* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
+
+
 
 
 
@@ -68,31 +66,31 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 var routes = [
-    { path: '', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
-    { path: 'login', component: _pages_home_login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"] },
+    { path: '', component: _pages_pharmacist_overview_pharmacist_overview_component__WEBPACK_IMPORTED_MODULE_6__["PharmacistOverviewComponent"] },
+    { path: 'login', component: _pages_login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"] },
     { path: 'patients', loadChildren: './pages/patients/patients.module#PatientsModule' },
-    { path: 'labs', component: _pages_labs_labs_component__WEBPACK_IMPORTED_MODULE_5__["LabsComponent"] },
-    { path: 'pharmacists', component: _pages_pharmacists_pharmacists_component__WEBPACK_IMPORTED_MODULE_6__["PharmacistsComponent"] },
-    { path: '**', component: _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_7__["NotFoundComponent"] }
+    { path: 'labs', component: _pages_labs_labs_component__WEBPACK_IMPORTED_MODULE_4__["LabsComponent"] },
+    { path: '**', component: _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_5__["NotFoundComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
-    AppRoutingModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)
+                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes),
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"],
+                _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_8__["MatCheckboxModule"]
             ],
             declarations: [
-                _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"],
-                _pages_home_login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"],
-                _pages_labs_labs_component__WEBPACK_IMPORTED_MODULE_5__["LabsComponent"],
-                _pages_pharmacists_pharmacists_component__WEBPACK_IMPORTED_MODULE_6__["PharmacistsComponent"],
-                _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_7__["NotFoundComponent"]
+                _pages_login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"],
+                _pages_labs_labs_component__WEBPACK_IMPORTED_MODULE_4__["LabsComponent"],
+                _pages_pharmacist_overview_pharmacist_overview_component__WEBPACK_IMPORTED_MODULE_6__["PharmacistOverviewComponent"],
+                _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_5__["NotFoundComponent"]
             ],
             exports: [
-                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]
+                _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]
             ]
         })
     ], AppRoutingModule);
@@ -110,7 +108,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -121,7 +119,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<navbar></navbar>"
+module.exports = "<navbar class=\"mat-typography\"></navbar>"
 
 /***/ }),
 
@@ -135,19 +133,15 @@ module.exports = "<navbar></navbar>"
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
     }
-    AppComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
@@ -170,18 +164,20 @@ var AppComponent = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./shared/navbar/navbar.component */ "./src/app/shared/navbar/navbar.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _shared_material_material_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shared/material/material.module */ "./src/app/shared/material/material.module.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./shared/navbar/navbar.component */ "./src/app/shared/navbar/navbar.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm5/sidenav.es5.js");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+
+
+
+
 
 
 
@@ -191,148 +187,25 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+    AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__["NavbarComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
+                _shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__["NavbarComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _angular_http__WEBPACK_IMPORTED_MODULE_2__["HttpModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"]
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
+                _angular_http__WEBPACK_IMPORTED_MODULE_4__["HttpModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
+                _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_8__["MatSidenavModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"],
+                _shared_material_material_module__WEBPACK_IMPORTED_MODULE_1__["MaterialModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/pages/home/home.component.css":
-/*!***********************************************!*\
-  !*** ./src/app/pages/home/home.component.css ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/pages/home/home.component.html":
-/*!************************************************!*\
-  !*** ./src/app/pages/home/home.component.html ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\r\n  This is the Home Page!\r\n</p>\r\n"
-
-/***/ }),
-
-/***/ "./src/app/pages/home/home.component.ts":
-/*!**********************************************!*\
-  !*** ./src/app/pages/home/home.component.ts ***!
-  \**********************************************/
-/*! exports provided: HomeComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var HomeComponent = /** @class */ (function () {
-    function HomeComponent() {
-    }
-    HomeComponent.prototype.ngOnInit = function () {
-    };
-    HomeComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-home',
-            template: __webpack_require__(/*! ./home.component.html */ "./src/app/pages/home/home.component.html"),
-            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/pages/home/home.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], HomeComponent);
-    return HomeComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/pages/home/login/login.component.css":
-/*!******************************************************!*\
-  !*** ./src/app/pages/home/login/login.component.css ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/pages/home/login/login.component.html":
-/*!*******************************************************!*\
-  !*** ./src/app/pages/home/login/login.component.html ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"form-screen\">\n  <a href=\"index.html\" class=\"spur-logo\"><i class=\"fas fa-bolt\"></i> <span>Spur</span></a>\n  <div class=\"card account-dialog\">\n      <div class=\"card-header bg-primary text-white\"> Please sign in </div>\n      <div class=\"card-body\">\n          <form action=\"#!\">\n              <div class=\"form-group\">\n                  <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\">\n              </div>\n              <div class=\"form-group\">\n                  <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\">\n              </div>\n              <div class=\"form-group\">\n                  <div class=\"custom-control custom-checkbox\">\n                      <input type=\"checkbox\" class=\"custom-control-input\" id=\"customCheck1\">\n                      <label class=\"custom-control-label\" for=\"customCheck1\">Remember me</label>\n                  </div>\n              </div>\n              <div class=\"account-dialog-actions\">\n                  <button type=\"submit\" class=\"btn btn-primary\">Sign in</button>\n                  <a class=\"account-dialog-link\" href=\"signup.html\">Create a new account</a>\n              </div>\n          </form>\n      </div>\n  </div>\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/pages/home/login/login.component.ts":
-/*!*****************************************************!*\
-  !*** ./src/app/pages/home/login/login.component.ts ***!
-  \*****************************************************/
-/*! exports provided: LoginComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var LoginComponent = /** @class */ (function () {
-    function LoginComponent() {
-    }
-    LoginComponent.prototype.ngOnInit = function () {
-    };
-    LoginComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-login',
-            template: __webpack_require__(/*! ./login.component.html */ "./src/app/pages/home/login/login.component.html"),
-            styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/pages/home/login/login.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], LoginComponent);
-    return LoginComponent;
 }());
 
 
@@ -346,7 +219,7 @@ var LoginComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2xhYnMvbGFicy5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -357,7 +230,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  This is the Labs Page!\n</p>\n"
+module.exports = "<h1 class=\"dash-title\">\n    <i class=\"fas fa-vials mr-3\"></i>Labs\n  </h1>\n  \n  <p>\n    <button mat-raised-button color=\"primary\" routerLink=\"../\">\n      <i class=\"fas fa-arrow-left mr-3\"></i>Overview</button>\n  </p>"
 
 /***/ }),
 
@@ -371,31 +244,80 @@ module.exports = "<p>\n  This is the Labs Page!\n</p>\n"
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LabsComponent", function() { return LabsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var LabsComponent = /** @class */ (function () {
     function LabsComponent() {
     }
     LabsComponent.prototype.ngOnInit = function () {
     };
-    LabsComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    LabsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-labs',
             template: __webpack_require__(/*! ./labs.component.html */ "./src/app/pages/labs/labs.component.html"),
             styles: [__webpack_require__(/*! ./labs.component.css */ "./src/app/pages/labs/labs.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], LabsComponent);
     return LabsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/login/login.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/pages/login/login.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/pages/login/login.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/pages/login/login.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"form-screen\">\n  <a href=\"index.html\" class=\"spur-logo\"><i class=\"fas fa-bolt\"></i> <span>Spur</span></a>\n  <div class=\"card account-dialog\">\n      <div class=\"card-header bg-primary text-white\"> Please sign in </div>\n      <div class=\"card-body\">\n          <form action=\"#!\">\n              <div class=\"form-group\">\n                  <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\">\n              </div>\n              <div class=\"form-group\">\n                  <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\">\n              </div>\n              <div class=\"form-group\">\n                  <div class=\"custom-control custom-checkbox\">\n                      <input type=\"checkbox\" class=\"custom-control-input\" id=\"customCheck1\">\n                      <label class=\"custom-control-label\" for=\"customCheck1\">Remember me</label>\n                  </div>\n              </div>\n              <div class=\"account-dialog-actions\">\n                  <button type=\"submit\" class=\"btn btn-primary\">Sign in</button>\n                  <a class=\"account-dialog-link\" href=\"signup.html\">Create a new account</a>\n              </div>\n          </form>\n      </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/login/login.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/pages/login/login.component.ts ***!
+  \************************************************/
+/*! exports provided: LoginComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var LoginComponent = /** @class */ (function () {
+    function LoginComponent() {
+    }
+    LoginComponent.prototype.ngOnInit = function () {
+    };
+    LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-login',
+            template: __webpack_require__(/*! ./login.component.html */ "./src/app/pages/login/login.component.html"),
+            styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/pages/login/login.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], LoginComponent);
+    return LoginComponent;
 }());
 
 
@@ -409,7 +331,7 @@ var LabsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL25vdC1mb3VuZC9ub3QtZm91bmQuY29tcG9uZW50LmNzcyJ9 */"
 
 /***/ }),
 
@@ -434,29 +356,22 @@ module.exports = "<p>\n  You entered an invalid URL!\n</p>\n"
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NotFoundComponent", function() { return NotFoundComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var NotFoundComponent = /** @class */ (function () {
     function NotFoundComponent() {
     }
     NotFoundComponent.prototype.ngOnInit = function () {
     };
-    NotFoundComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    NotFoundComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-not-found',
             template: __webpack_require__(/*! ./not-found.component.html */ "./src/app/pages/not-found/not-found.component.html"),
             styles: [__webpack_require__(/*! ./not-found.component.css */ "./src/app/pages/not-found/not-found.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], NotFoundComponent);
     return NotFoundComponent;
 }());
@@ -465,63 +380,121 @@ var NotFoundComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/pages/pharmacists/pharmacists.component.css":
-/*!*************************************************************!*\
-  !*** ./src/app/pages/pharmacists/pharmacists.component.css ***!
-  \*************************************************************/
+/***/ "./src/app/pages/pharmacist-overview/pharmacist-overview.component.css":
+/*!*****************************************************************************!*\
+  !*** ./src/app/pages/pharmacist-overview/pharmacist-overview.component.css ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3BoYXJtYWNpc3Qtb3ZlcnZpZXcvcGhhcm1hY2lzdC1vdmVydmlldy5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
-/***/ "./src/app/pages/pharmacists/pharmacists.component.html":
-/*!**************************************************************!*\
-  !*** ./src/app/pages/pharmacists/pharmacists.component.html ***!
-  \**************************************************************/
+/***/ "./src/app/pages/pharmacist-overview/pharmacist-overview.component.html":
+/*!******************************************************************************!*\
+  !*** ./src/app/pages/pharmacist-overview/pharmacist-overview.component.html ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  This is the Pharmacists Page!\n</p>\n"
+module.exports = "<h1 class=\"dash-title\">\r\n  <i class=\"fas fa-clinic-medical mr-3\"></i>Overview\r\n</h1>\r\n\r\n<p>\r\n  <button mat-raised-button color=\"primary\" routerLink=\"patients\">\r\n    <i class=\"fas fa-users mr-3\"></i>Patients</button>\r\n</p>\r\n\r\n<p>\r\n  <button mat-raised-button color=\"primary\" routerLink=\"labs\">\r\n    <i class=\"fas fa-vials mr-3\"></i>Labs</button>\r\n</p>\r\n\r\n"
 
 /***/ }),
 
-/***/ "./src/app/pages/pharmacists/pharmacists.component.ts":
-/*!************************************************************!*\
-  !*** ./src/app/pages/pharmacists/pharmacists.component.ts ***!
-  \************************************************************/
-/*! exports provided: PharmacistsComponent */
+/***/ "./src/app/pages/pharmacist-overview/pharmacist-overview.component.ts":
+/*!****************************************************************************!*\
+  !*** ./src/app/pages/pharmacist-overview/pharmacist-overview.component.ts ***!
+  \****************************************************************************/
+/*! exports provided: PharmacistOverviewComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PharmacistsComponent", function() { return PharmacistsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PharmacistOverviewComponent", function() { return PharmacistOverviewComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 
-var PharmacistsComponent = /** @class */ (function () {
-    function PharmacistsComponent() {
+
+var PharmacistOverviewComponent = /** @class */ (function () {
+    function PharmacistOverviewComponent() {
     }
-    PharmacistsComponent.prototype.ngOnInit = function () {
+    PharmacistOverviewComponent.prototype.ngOnInit = function () {
     };
-    PharmacistsComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    PharmacistOverviewComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-pharmacists',
-            template: __webpack_require__(/*! ./pharmacists.component.html */ "./src/app/pages/pharmacists/pharmacists.component.html"),
-            styles: [__webpack_require__(/*! ./pharmacists.component.css */ "./src/app/pages/pharmacists/pharmacists.component.css")]
+            template: __webpack_require__(/*! ./pharmacist-overview.component.html */ "./src/app/pages/pharmacist-overview/pharmacist-overview.component.html"),
+            styles: [__webpack_require__(/*! ./pharmacist-overview.component.css */ "./src/app/pages/pharmacist-overview/pharmacist-overview.component.css")]
         }),
-        __metadata("design:paramtypes", [])
-    ], PharmacistsComponent);
-    return PharmacistsComponent;
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], PharmacistOverviewComponent);
+    return PharmacistOverviewComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/material/material.module.ts":
+/*!****************************************************!*\
+  !*** ./src/app/shared/material/material.module.ts ***!
+  \****************************************************/
+/*! exports provided: MaterialModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialModule", function() { return MaterialModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
+/* harmony import */ var _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/slide-toggle */ "./node_modules/@angular/material/esm5/slide-toggle.es5.js");
+/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/form-field */ "./node_modules/@angular/material/esm5/form-field.es5.js");
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm5/input.es5.js");
+/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm5/sidenav.es5.js");
+/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/toolbar */ "./node_modules/@angular/material/esm5/toolbar.es5.js");
+/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/menu */ "./node_modules/@angular/material/esm5/menu.es5.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm5/select.es5.js");
+/* harmony import */ var _angular_material_radio__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/radio */ "./node_modules/@angular/material/esm5/radio.es5.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+var MaterialComponents = [
+    _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButtonModule"],
+    _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_3__["MatSlideToggleModule"],
+    _angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__["MatFormFieldModule"],
+    _angular_material_input__WEBPACK_IMPORTED_MODULE_5__["MatInputModule"],
+    _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_6__["MatSidenavModule"],
+    _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_7__["MatToolbarModule"],
+    _angular_material_menu__WEBPACK_IMPORTED_MODULE_8__["MatMenuModule"],
+    _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"],
+    _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"],
+    _angular_material_radio__WEBPACK_IMPORTED_MODULE_11__["MatRadioModule"],
+    _angular_material_card__WEBPACK_IMPORTED_MODULE_12__["MatCardModule"]
+];
+var MaterialModule = /** @class */ (function () {
+    function MaterialModule() {
+    }
+    MaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            imports: [MaterialComponents],
+            exports: [MaterialComponents]
+        })
+    ], MaterialModule);
+    return MaterialModule;
 }());
 
 
@@ -535,7 +508,7 @@ var PharmacistsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "mat-sidenav-container {\r\n    height: 100%;\r\n}\r\n\r\nmat-sidenav, mat-sidenav-content {\r\n    padding: 0;\r\n}\r\n\r\nmat-sidenav {\r\n    width: 200px;\r\n}\r\n\r\nbutton {\r\n    outline: none;\r\n}\r\n\r\na:hover {\r\n    text-decoration: none;\r\n}\r\n\r\n#mini {\r\n    padding: 0 15%;\r\n    margin-top: 112px;\r\n}\r\n\r\n#navHeader {\r\n    margin: 0;\r\n    padding: 0;\r\n    position: absolute;\r\n    top: 4%;\r\n    left: 12.5%;\r\n}\r\n\r\n#navItems {\r\n    margin: 0;\r\n    padding: 0;\r\n    position: absolute;\r\n    top: 30%;\r\n    left: 0%;\r\n}\r\n\r\n.tbar {\r\n    position: fixed;\r\n    z-index: 1;\r\n    background-color: rgba(255, 255, 255, 0.95);\r\n}\r\n\r\n.absolute {\r\n    position: fixed;\r\n    right: 2%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL25hdmJhci9uYXZiYXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxVQUFVO0FBQ2Q7O0FBRUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksYUFBYTtBQUNqQjs7QUFFQTtJQUNJLHFCQUFxQjtBQUN6Qjs7QUFFQTtJQUNJLGNBQWM7SUFDZCxpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxTQUFTO0lBQ1QsVUFBVTtJQUNWLGtCQUFrQjtJQUNsQixPQUFPO0lBQ1AsV0FBVztBQUNmOztBQUVBO0lBQ0ksU0FBUztJQUNULFVBQVU7SUFDVixrQkFBa0I7SUFDbEIsUUFBUTtJQUNSLFFBQVE7QUFDWjs7QUFFQTtJQUNJLGVBQWU7SUFDZixVQUFVO0lBQ1YsMkNBQTJDO0FBQy9DOztBQUVBO0lBQ0ksZUFBZTtJQUNmLFNBQVM7QUFDYiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9uYXZiYXIvbmF2YmFyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtc2lkZW5hdi1jb250YWluZXIge1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG59XHJcblxyXG5tYXQtc2lkZW5hdiwgbWF0LXNpZGVuYXYtY29udGVudCB7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG59XHJcblxyXG5tYXQtc2lkZW5hdiB7XHJcbiAgICB3aWR0aDogMjAwcHg7XHJcbn1cclxuXHJcbmJ1dHRvbiB7XHJcbiAgICBvdXRsaW5lOiBub25lO1xyXG59XHJcblxyXG5hOmhvdmVyIHtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5cclxuI21pbmkge1xyXG4gICAgcGFkZGluZzogMCAxNSU7XHJcbiAgICBtYXJnaW4tdG9wOiAxMTJweDtcclxufVxyXG5cclxuI25hdkhlYWRlciB7XHJcbiAgICBtYXJnaW46IDA7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiA0JTtcclxuICAgIGxlZnQ6IDEyLjUlO1xyXG59XHJcblxyXG4jbmF2SXRlbXMge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMzAlO1xyXG4gICAgbGVmdDogMCU7XHJcbn1cclxuXHJcbi50YmFyIHtcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIHotaW5kZXg6IDE7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuOTUpO1xyXG59XHJcblxyXG4uYWJzb2x1dGUge1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgcmlnaHQ6IDIlO1xyXG59Il19 */"
 
 /***/ }),
 
@@ -546,7 +519,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark shadow\">\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\">\r\n          <a class=\"nav-link text-danger\" routerLink=\"\"><i class=\"fa fa-heartbeat fa-lg\"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link text-white\" routerLink=\"patients\"><i class=\"fa fa-id-card fa-lg\"></i>&nbsp;&nbsp;Patients</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link text-white\" routerLink=\"labs\"><i class=\"fa fa-thermometer fa-lg\"></i>&nbsp;&nbsp;Labs</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link text-white\" routerLink=\"pharmacists\"><i class=\"fa fa-user-md fa-lg\"></i>&nbsp;&nbsp;Pharmacists</a>\r\n      </li>\r\n    </ul>\r\n    <ul class=\"navbar-nav\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link text-white btn btn-primary my-1\" routerLink=\"login\"><i class=\"fa fa-sign-in fa-lg\"></i> Login</a>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</nav> -->\r\n\r\n<div class=\"dash\">\r\n    <div class=\"dash-nav dash-nav-dark\">\r\n        <header>\r\n            <a href=\"#!\" class=\"menu-toggle\">\r\n                <i class=\"fas fa-bars\"></i>\r\n            </a>\r\n            <a href=\"index.html\" class=\"spur-logo\"><i class=\"fas fa-heartbeat\"></i><span>Spur</span></a>\r\n        </header>\r\n        <nav class=\"dash-nav-list\">\r\n            <a href=\"index.html\" class=\"dash-nav-item\">\r\n                <i class=\"fas fa-home\"></i>Dashboard</a>\r\n            <div class=\"dash-nav-dropdown\">\r\n                <a href=\"#!\" class=\"dash-nav-item dash-nav-dropdown-toggle\">\r\n                    <i class=\"fas fa-id-card\"></i>Patients</a>\r\n                <div class=\"dash-nav-dropdown-menu\">\r\n                    <a routerLink=\"patients\" class=\"dash-nav-dropdown-item\">View Patients</a>\r\n                </div>\r\n            </div>\r\n            <div class=\"dash-nav-dropdown\">\r\n                <a href=\"#!\" class=\"dash-nav-item dash-nav-dropdown-toggle\">\r\n                    <i class=\"fas fa-thermometer\"></i>Labs</a>\r\n                <div class=\"dash-nav-dropdown-menu\">\r\n                    <a href=\"cards.html\" class=\"dash-nav-dropdown-item\">Cards</a>\r\n                    <a href=\"forms.html\" class=\"dash-nav-dropdown-item\">Forms</a>\r\n                    <div class=\"dash-nav-dropdown \">\r\n                        <a href=\"#\" class=\"dash-nav-dropdown-item dash-nav-dropdown-toggle\">Icons</a>\r\n                        <div class=\"dash-nav-dropdown-menu\">\r\n                            <a href=\"icons.html\" class=\"dash-nav-dropdown-item\">Solid Icons</a>\r\n                            <a href=\"icons.html#regular-icons\" class=\"dash-nav-dropdown-item\">Regular Icons</a>\r\n                            <a href=\"icons.html#brand-icons\" class=\"dash-nav-dropdown-item\">Brand Icons</a>\r\n                        </div>\r\n                    </div>\r\n                    <a href=\"stats.html\" class=\"dash-nav-dropdown-item\">Stats</a>\r\n                    <a href=\"tables.html\" class=\"dash-nav-dropdown-item\">Tables</a>\r\n                    <a href=\"typography.html\" class=\"dash-nav-dropdown-item\">Typography</a>\r\n                    <a href=\"userinterface.html\" class=\"dash-nav-dropdown-item\">User Interface</a>\r\n                </div>\r\n            </div>\r\n            <div class=\"dash-nav-dropdown\">\r\n                <a href=\"#!\" class=\"dash-nav-item dash-nav-dropdown-toggle\">\r\n                    <i class=\"fas fa-file\"></i> Layouts </a>\r\n                <div class=\"dash-nav-dropdown-menu\">\r\n                    <a href=\"blank.html\" class=\"dash-nav-dropdown-item\">Blank</a>\r\n                    <a href=\"content.html\" class=\"dash-nav-dropdown-item\">Content</a>\r\n                    <a href=\"login.html\" class=\"dash-nav-dropdown-item\">Log in</a>\r\n                    <a href=\"signup.html\" class=\"dash-nav-dropdown-item\">Sign up</a>\r\n                </div>\r\n            </div>\r\n            <div class=\"dash-nav-dropdown\">\r\n                <a href=\"#!\" class=\"dash-nav-item dash-nav-dropdown-toggle\">\r\n                    <i class=\"fas fa-info\"></i> About </a>\r\n                <div class=\"dash-nav-dropdown-menu\">\r\n                    <a href=\"https://github.com/HackerThemes/spur-template\" target=\"_blank\" class=\"dash-nav-dropdown-item\">GitHub</a>\r\n                    <a href=\"http://hackerthemes.com\" target=\"_blank\" class=\"dash-nav-dropdown-item\">HackerThemes</a>\r\n                </div>\r\n            </div>\r\n        </nav>\r\n    </div>\r\n    <div class=\"dash-app\">\r\n        <header class=\"dash-toolbar\">\r\n            <a href=\"#!\" class=\"menu-toggle\">\r\n                <i class=\"fas fa-bars\"></i>\r\n            </a>\r\n            <a href=\"#!\" class=\"searchbox-toggle\">\r\n                <i class=\"fas fa-search\"></i>\r\n            </a>\r\n            <form class=\"searchbox\" action=\"#!\">\r\n                <a href=\"#!\" class=\"searchbox-toggle\"> <i class=\"fas fa-arrow-left\"></i> </a>\r\n                <button type=\"submit\" class=\"searchbox-submit\"> <i class=\"fas fa-search\"></i> </button>\r\n                <input type=\"text\" class=\"searchbox-input\" placeholder=\"type to search\">\r\n            </form>\r\n            <div class=\"tools\">\r\n                <div class=\"dropdown tools-item\">\r\n                    <a href=\"#\" class=\"\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        <i class=\"fas fa-user\"></i>\r\n                    </a>\r\n                    <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"dropdownMenu1\">\r\n                        <a class=\"dropdown-item\" href=\"#!\">Profile</a>\r\n                        <a class=\"dropdown-item\" href=\"login.html\">Logout</a>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </header>\r\n        <main class=\"dash-content\">\r\n            <div class=\"container-fluid\">\r\n              <router-outlet></router-outlet>\r\n            </div>\r\n        </main>\r\n    </div>\r\n</div>"
+module.exports = "<mat-sidenav-container>\r\n    <mat-sidenav class=\"mat-elevation-z6 shadow bg-dark\" #sidenav mode=\"side\" [(opened)]=\"opened\">\r\n        <div>\r\n            <header id=\"navHeader\">\r\n                <!-- <a href=\"#!\" class=\"menu-toggle\"><i class=\"fas fa-bars\"></i></a> -->\r\n                <a routerLink=\"\" class=\"spur-logo\">\r\n                    <i class=\"fas fa-heartbeat text-danger\"></i><span class=\"text-white\">Strand</span></a>\r\n            </header>\r\n            <nav id=\"navItems\">\r\n                <a routerLink=\"\" class=\"dash-nav-item text-white\">\r\n                    <i class=\"fas fa-clinic-medical\"></i>Overview</a>\r\n                <a routerLink=\"patients\" class=\"dash-nav-item text-white\">\r\n                    <i class=\"fas fa-users\"></i>Patients</a>\r\n                <a routerLink=\"labs\" class=\"dash-nav-item text-white\">\r\n                    <i class=\"fas fa-vials\"></i>Labs</a>\r\n            </nav>\r\n        </div>\r\n    </mat-sidenav>\r\n    <mat-sidenav-content>\r\n        <mat-toolbar class=\"tbar container-fluid mb-5 mat-elevation-z6\">\r\n            <button mat-button class=\"menu-toggle\" (click)=\"sidenav.toggle()\">\r\n                <i class=\"fas fa-bars\"></i></button>\r\n            <div class=\"tools absolute\">\r\n                <div>\r\n                    <i class=\"fas fa-search mr-2\"></i>Search\r\n                    <mat-form-field class=\"mx-2\">\r\n                        <input matInput>\r\n                    </mat-form-field>\r\n                </div>\r\n                <button mat-button [matMenuTriggerFor]=\"menu\"><i class=\"fas fa-user fa-lg\"></i></button>\r\n                <mat-menu #menu=\"matMenu\">\r\n                    <button routerLink=\"login\" mat-menu-item>\r\n                        <i class=\"fas fa-sign-out-alt mr-2\"></i>Logout</button>\r\n                </mat-menu>\r\n            </div>\r\n        </mat-toolbar>\r\n        <div id=\"mini\">\r\n            <mat-card class=\"mb-5\">\r\n                <router-outlet></router-outlet>\r\n            </mat-card>\r\n        </div>\r\n    </mat-sidenav-content>\r\n</mat-sidenav-container>"
 
 /***/ }),
 
@@ -560,29 +533,23 @@ module.exports = "<!-- <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavbarComponent", function() { return NavbarComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
 
 var NavbarComponent = /** @class */ (function () {
     function NavbarComponent() {
+        this.opened = true;
     }
     NavbarComponent.prototype.ngOnInit = function () {
     };
-    NavbarComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+    NavbarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'navbar',
             template: __webpack_require__(/*! ./navbar.component.html */ "./src/app/shared/navbar/navbar.component.html"),
             styles: [__webpack_require__(/*! ./navbar.component.css */ "./src/app/shared/navbar/navbar.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], NavbarComponent);
     return NavbarComponent;
 }());
@@ -627,18 +594,21 @@ var environment = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
-/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
 
 
 
 
-if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
 }
-Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
     .catch(function (err) { return console.log(err); });
 
 
@@ -651,7 +621,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Work\book-code\angular-frontend\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Work\book-code\runApp\Client\angular-frontend\src\main.ts */"./src/main.ts");
 
 
 /***/ })
