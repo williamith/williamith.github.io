@@ -490,7 +490,7 @@ __webpack_require__.r(__webpack_exports__);
 var GetAllLabTypesService = /** @class */ (function () {
     function GetAllLabTypesService(http) {
         this.http = http;
-        this.url = 'http://localhost:44400/api/labstype';
+        this.url = 'https://labsapi.azurewebsites.net/api/labstype';
     }
     GetAllLabTypesService.prototype.getAllLabTypes = function () {
         return this.http.get(this.url);
@@ -531,7 +531,7 @@ var GetPatientLabsService = /** @class */ (function () {
         this.http = http;
         this.currentPatientService = currentPatientService;
         this.currentPatient = this.currentPatientService.getCurrentPatient();
-        this.url = 'http://localhost:44400/api/labscollection';
+        this.url = 'https://labsapi.azurewebsites.net/api/labscollection';
     }
     GetPatientLabsService.prototype.getPatientLabs = function (patientId) {
         console.log(this.http.get(this.url + '/' + patientId));
@@ -570,7 +570,7 @@ __webpack_require__.r(__webpack_exports__);
 var ViewAllPatientsService = /** @class */ (function () {
     function ViewAllPatientsService(http) {
         this.http = http;
-        this.url = 'http://localhost:44300/api/patients';
+        this.url = 'https://patientsapi.azurewebsites.net/api/patients';
     }
     ViewAllPatientsService.prototype.getAllPatients = function () {
         return this.http.get(this.url);

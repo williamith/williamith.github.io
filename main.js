@@ -46,15 +46,17 @@ module.exports = webpackAsyncContext;
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _pages_labs_labs_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/labs/labs.component */ "./src/app/pages/labs/labs.component.ts");
-/* harmony import */ var _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/not-found/not-found.component */ "./src/app/pages/not-found/not-found.component.ts");
-/* harmony import */ var _pages_pharmacist_overview_pharmacist_overview_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/pharmacist-overview/pharmacist-overview.component */ "./src/app/pages/pharmacist-overview/pharmacist-overview.component.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/checkbox */ "./node_modules/@angular/material/esm5/checkbox.es5.js");
-/* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
+/* harmony import */ var _pages_home_login_login_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/home/login/login.component */ "./src/app/pages/home/login/login.component.ts");
+/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _pages_labs_labs_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/labs/labs.component */ "./src/app/pages/labs/labs.component.ts");
+/* harmony import */ var _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/not-found/not-found.component */ "./src/app/pages/not-found/not-found.component.ts");
+/* harmony import */ var _pages_pharmacist_overview_pharmacist_overview_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/pharmacist-overview/pharmacist-overview.component */ "./src/app/pages/pharmacist-overview/pharmacist-overview.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/checkbox */ "./node_modules/@angular/material/esm5/checkbox.es5.js");
+
 
 
 
@@ -66,31 +68,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: '', component: _pages_pharmacist_overview_pharmacist_overview_component__WEBPACK_IMPORTED_MODULE_6__["PharmacistOverviewComponent"] },
-    { path: 'login', component: _pages_login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"] },
+    { path: '', component: _pages_pharmacist_overview_pharmacist_overview_component__WEBPACK_IMPORTED_MODULE_8__["PharmacistOverviewComponent"] },
+    { path: 'login', component: _pages_home_login_login_component__WEBPACK_IMPORTED_MODULE_1__["LoginComponent"] },
     { path: 'patients', loadChildren: './pages/patients/patients.module#PatientsModule' },
-    { path: 'labs', component: _pages_labs_labs_component__WEBPACK_IMPORTED_MODULE_4__["LabsComponent"] },
-    { path: '**', component: _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_5__["NotFoundComponent"] }
+    { path: 'labs', component: _pages_labs_labs_component__WEBPACK_IMPORTED_MODULE_6__["LabsComponent"] },
+    { path: '**', component: _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_7__["NotFoundComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
     AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
             imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes),
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"],
-                _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_8__["MatCheckboxModule"]
+                _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forRoot(routes),
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"],
+                _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_10__["MatCheckboxModule"]
             ],
             declarations: [
-                _pages_login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"],
-                _pages_labs_labs_component__WEBPACK_IMPORTED_MODULE_4__["LabsComponent"],
-                _pages_pharmacist_overview_pharmacist_overview_component__WEBPACK_IMPORTED_MODULE_6__["PharmacistOverviewComponent"],
-                _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_5__["NotFoundComponent"]
+                _pages_labs_labs_component__WEBPACK_IMPORTED_MODULE_6__["LabsComponent"],
+                _pages_pharmacist_overview_pharmacist_overview_component__WEBPACK_IMPORTED_MODULE_8__["PharmacistOverviewComponent"],
+                _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_7__["NotFoundComponent"],
+                _pages_home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"],
+                _pages_home_login_login_component__WEBPACK_IMPORTED_MODULE_1__["LoginComponent"]
             ],
             exports: [
-                _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]
+                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"]
             ]
         })
     ], AppRoutingModule);
@@ -212,6 +215,118 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/pages/home/home.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/pages/home/home.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/pages/home/home.component.html":
+/*!************************************************!*\
+  !*** ./src/app/pages/home/home.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  This is the Home Page!\r\n</p>\r\n\r\n<mat-checkbox>Subscribe to newsletter</mat-checkbox>"
+
+/***/ }),
+
+/***/ "./src/app/pages/home/home.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/pages/home/home.component.ts ***!
+  \**********************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var HomeComponent = /** @class */ (function () {
+    function HomeComponent() {
+    }
+    HomeComponent.prototype.ngOnInit = function () {
+    };
+    HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-home',
+            template: __webpack_require__(/*! ./home.component.html */ "./src/app/pages/home/home.component.html"),
+            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/pages/home/home.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], HomeComponent);
+    return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/home/login/login.component.css":
+/*!******************************************************!*\
+  !*** ./src/app/pages/home/login/login.component.css ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2hvbWUvbG9naW4vbG9naW4uY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/pages/home/login/login.component.html":
+/*!*******************************************************!*\
+  !*** ./src/app/pages/home/login/login.component.html ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"form-screen\">\r\n  <a href=\"index.html\" class=\"spur-logo\"><i class=\"fas fa-bolt\"></i> <span>Spur</span></a>\r\n  <div class=\"card account-dialog\">\r\n      <div class=\"card-header bg-primary text-white\"> Please sign in </div>\r\n      <div class=\"card-body\">\r\n          <form action=\"#!\">\r\n              <div class=\"form-group\">\r\n                  <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\">\r\n              </div>\r\n              <div class=\"form-group\">\r\n                  <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\">\r\n              </div>\r\n              <div class=\"form-group\">\r\n                  <div class=\"custom-control custom-checkbox\">\r\n                      <input type=\"checkbox\" class=\"custom-control-input\" id=\"customCheck1\">\r\n                      <label class=\"custom-control-label\" for=\"customCheck1\">Remember me</label>\r\n                  </div>\r\n              </div>\r\n              <div class=\"account-dialog-actions\">\r\n                  <button type=\"submit\" class=\"btn btn-primary\">Sign in</button>\r\n                  <a class=\"account-dialog-link\" href=\"signup.html\">Create a new account</a>\r\n              </div>\r\n          </form>\r\n      </div>\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/home/login/login.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/pages/home/login/login.component.ts ***!
+  \*****************************************************/
+/*! exports provided: LoginComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var LoginComponent = /** @class */ (function () {
+    function LoginComponent() {
+    }
+    LoginComponent.prototype.ngOnInit = function () {
+    };
+    LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-login',
+            template: __webpack_require__(/*! ./login.component.html */ "./src/app/pages/home/login/login.component.html"),
+            styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/pages/home/login/login.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], LoginComponent);
+    return LoginComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/labs/labs.component.css":
 /*!***********************************************!*\
   !*** ./src/app/pages/labs/labs.component.css ***!
@@ -262,62 +377,6 @@ var LabsComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], LabsComponent);
     return LabsComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/pages/login/login.component.css":
-/*!*************************************************!*\
-  !*** ./src/app/pages/login/login.component.css ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5jc3MifQ== */"
-
-/***/ }),
-
-/***/ "./src/app/pages/login/login.component.html":
-/*!**************************************************!*\
-  !*** ./src/app/pages/login/login.component.html ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"form-screen\">\n  <a href=\"index.html\" class=\"spur-logo\"><i class=\"fas fa-bolt\"></i> <span>Spur</span></a>\n  <div class=\"card account-dialog\">\n      <div class=\"card-header bg-primary text-white\"> Please sign in </div>\n      <div class=\"card-body\">\n          <form action=\"#!\">\n              <div class=\"form-group\">\n                  <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\">\n              </div>\n              <div class=\"form-group\">\n                  <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\">\n              </div>\n              <div class=\"form-group\">\n                  <div class=\"custom-control custom-checkbox\">\n                      <input type=\"checkbox\" class=\"custom-control-input\" id=\"customCheck1\">\n                      <label class=\"custom-control-label\" for=\"customCheck1\">Remember me</label>\n                  </div>\n              </div>\n              <div class=\"account-dialog-actions\">\n                  <button type=\"submit\" class=\"btn btn-primary\">Sign in</button>\n                  <a class=\"account-dialog-link\" href=\"signup.html\">Create a new account</a>\n              </div>\n          </form>\n      </div>\n  </div>\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/pages/login/login.component.ts":
-/*!************************************************!*\
-  !*** ./src/app/pages/login/login.component.ts ***!
-  \************************************************/
-/*! exports provided: LoginComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-
-
-var LoginComponent = /** @class */ (function () {
-    function LoginComponent() {
-    }
-    LoginComponent.prototype.ngOnInit = function () {
-    };
-    LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-login',
-            template: __webpack_require__(/*! ./login.component.html */ "./src/app/pages/login/login.component.html"),
-            styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/pages/login/login.component.css")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], LoginComponent);
-    return LoginComponent;
 }());
 
 
@@ -621,7 +680,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Work\book-code\runApp\Client\angular-frontend\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Work\book-code\runAppDeploy\Client\angular-frontend\src\main.ts */"./src/main.ts");
 
 
 /***/ })
